@@ -1,0 +1,8 @@
+{
+  "test-datasource": {
+    "name": "test-datasource",
+    "localStorage": "",
+    "file": "./build/test-datasource.json",
+    "connector": "memory"
+  }
+}

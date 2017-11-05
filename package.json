@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node .",
+    "test": "./node_modules/.bin/mocha test --reporter spec --recursive",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {

@@ -24,7 +24,9 @@ phases:
       # - command
 artifacts:
   files:
-    # - location
-    # - location
+    - 'server/**/*'
+    - 'common/**/*'
+    - 'build/test-datasource.json'
+    - 'package.json'
   #discard-paths: yes
   #base-directory: location

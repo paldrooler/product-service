@@ -14,7 +14,7 @@
     ]
   },
   "product": {
-    "dataSource": "test-datasource",
+    "dataSource": "product-datasource",
     "public": true
   }
 }

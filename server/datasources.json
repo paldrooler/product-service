@@ -1,5 +1,5 @@
 {
-  "test-datasource": {
+  "product-datasource": {
     "name": "test-datasource",
     "localStorage": "",
     "file": "./build/test-datasource.json",

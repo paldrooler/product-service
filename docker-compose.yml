@@ -1,0 +1,19 @@
+version: "2"
+services:
+  app:
+    container_name: products-services
+    restart: always
+    build: .
+    ports: 
+      - "3000:3000"
+    links: 
+      - mongodb
+    environment: 
+      - NODE_ENV=prod
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    #volumes:
+    #  - ./data:/data/db
+    ports:
+      - "27017:27017"

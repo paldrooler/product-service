@@ -4,9 +4,9 @@
     "port": 27017,
     "url": "",
     "database": "products",
-    "password": "",
+    "password": "changeme",
     "name": "integration-datasource",
-    "user": "",
+    "user": "productservice",
     "connector": "mongodb"
   }
 }

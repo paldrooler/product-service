@@ -13,3 +13,5 @@ npm complains about REGEX DOS unless silenced
 ## Versions and Features
 
 0.0.1 - Basic Versions
+0.0.2 - Added better doco, added mongo DB creds for non-test systems
+

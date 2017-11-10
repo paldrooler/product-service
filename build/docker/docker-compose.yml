@@ -1,9 +1,11 @@
 version: "2"
 services:
-  app:
+  product-service:
     container_name: products-services
     restart: always
-    build: .
+    build: 
+      context: ../..
+      dockerfile: build/docker/Dockerfile
     ports: 
       - "3000:3000"
     links: 
@@ -12,6 +14,9 @@ services:
       - NODE_ENV=prod
   mongodb:
     container_name: mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=productservice
+      - MONGO_INITDB_ROOT_PASSWORD=changeme
     image: mongo
     #volumes:
     #  - ./data:/data/db

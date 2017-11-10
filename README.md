@@ -9,3 +9,7 @@ Uses MEAN stack and docker concepts to implement a microservices architecture.
 ## known issues
 
 npm complains about REGEX DOS unless silenced
+
+## Versions and Features
+
+0.0.1 - Basic Versions

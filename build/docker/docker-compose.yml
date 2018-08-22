@@ -1,5 +1,14 @@
 version: "2"
 services:
+  mongodb:
+    container_name: mongodb
+    image: 'bitnami/mongodb:latest'
+    environment:
+    - MONGODB_USERNAME=productservice
+    - MONGODB_PASSWORD=changeme
+    - MONGODB_DATABASE=products
+    ports:
+      - "27017:27017"
   product-service:
     container_name: products-services
     restart: always
@@ -12,13 +21,4 @@ services:
       - mongodb
     environment: 
       - NODE_ENV=prod
-  mongodb:
-    container_name: mongodb
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=productservice
-      - MONGO_INITDB_ROOT_PASSWORD=changeme
-    image: mongo
-    #volumes:
-    #  - ./data:/data/db
-    ports:
-      - "27017:27017"
+  

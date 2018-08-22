@@ -15,3 +15,18 @@ npm complains about REGEX DOS unless silenced
 0.0.1 - Basic Versions
 0.0.2 - Added better doco, added mongo DB creds for non-test systems
 
+## Starting and Running
+
+### dev mode
+
+Build the application in dev mode using:
+
+```node install
+node .
+```
+
+This uses ```./build/test-datasources.json``` as it's pre-filled datasource with a product in it.
+
+### Docker mode
+
+To run the application with a real mongo, use the ```Dockerfile``` in ```./build/docker```

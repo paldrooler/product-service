@@ -2,8 +2,9 @@
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
-
+var morgan = require('morgan');
 var app = module.exports = loopback();
+app.use(morgan('combined'));
 
 app.start = function() {
   // start the web server

@@ -4,4 +4,4 @@ set -ex
 USERNAME=paldrooler
 IMAGE=product-service
 
-docker build -t $USERNAME/$IMAGE:latest ../..
+docker build --file Dockerfile -t $USERNAME/$IMAGE:latest ../..
